@@ -1,0 +1,1 @@
+# YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Management-System
