@@ -16,9 +16,9 @@ from supervision.video.source import get_video_frames_generator
 from supervision.geometry.dataclasses import Point
 from supervision.draw.color import ColorPalette
 
-from modules.plate_recognition import PlateRecognizer
-from modules.speed_estimation import SpeedEstimator
-from utils.annotation import NoteAnnotator, TraceAnnotator
+from .modules.plate_recognition import PlateRecognizer
+from .modules.speed_estimation import SpeedEstimator
+from .utils.annotation import NoteAnnotator, TraceAnnotator
 
 log = logging.getLogger(__name__)
 
