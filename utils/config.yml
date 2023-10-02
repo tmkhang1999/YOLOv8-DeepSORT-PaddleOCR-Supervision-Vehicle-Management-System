@@ -1,0 +1,12 @@
+camera:
+  L0: 0.2
+  f1: 928.7943
+  f2: -67.777
+  s_x: 0.64
+  s_y: 3
+  V0: 75.0
+  y_min: 750.0
+  y_max: 2500.0
+models:
+  vehicle_detector_path: "./data/models/yolov8x.pt"
+  plate_detector_path: "./data/models/license_plate_detector.pt"
