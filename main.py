@@ -1,5 +1,5 @@
 import argparse
-from modules import VideoProcessor
+from modules.video_processor import VideoProcessor
 from utils.config import ConfigManager
 
 
