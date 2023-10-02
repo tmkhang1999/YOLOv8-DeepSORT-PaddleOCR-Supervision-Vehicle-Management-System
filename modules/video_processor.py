@@ -113,7 +113,7 @@ class VideoProcessor:
                 dets = []
                 for x1, y1, x2, y2, conf, id in results[0].boxes.data.cpu().numpy():
                     if id in self.CLASS_ID:
-                        dets.append(([x1, y1, int(x2 - x1), int(y2 - y1)], conf, id))
+                        dets.append(([int(x1), int(y1), int(x2 - x1), int(y2 - y1)], conf, id))
 
                 if dets:
                     tracks = self.object_tracker.update_tracks(dets, frame=frame)
