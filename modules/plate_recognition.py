@@ -64,7 +64,7 @@ class PlateRecognizer:
             plate_frame = car_frame[int(y1):int(y2), int(x1):int(x2)]
 
             result = self.ocr_model.ocr(plate_frame, cls=True)
-            if result:
+            if result and result[0]:
                 info = result[0][0][-1]
                 return info[0], info[1]
 
