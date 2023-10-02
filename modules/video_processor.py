@@ -16,7 +16,8 @@ from supervision.video.source import get_video_frames_generator
 from supervision.geometry.dataclasses import Point
 from supervision.draw.color import ColorPalette
 
-from modules import PlateRecognizer, SpeedEstimator
+from modules.plate_recognition import PlateRecognizer
+from modules.speed_estimation import SpeedEstimator
 from utils.annotation import NoteAnnotator, TraceAnnotator
 
 log = logging.getLogger(__name__)
@@ -92,7 +93,7 @@ class VideoProcessor:
         self.note_annotator = NoteAnnotator(color_dict=self.CLASS_DICT)
         self.trace_annotator = TraceAnnotator()
 
-        # Calculate the scale of our ơn frame compared to 720p (1280 x 720px)
+        # Calculate the scale of our own frame compared to 720p (1280 x 720px)
         self.scale = int(math.sqrt(width * height / 1280 / 720))
 
     def process_video(self):
