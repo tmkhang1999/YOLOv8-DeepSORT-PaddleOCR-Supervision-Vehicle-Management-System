@@ -1,7 +1,7 @@
 import logging
 import math
 
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 import numpy as np
 from collections import deque
 from supervision.video.sink import VideoSink
@@ -16,9 +16,9 @@ from supervision.video.source import get_video_frames_generator
 from supervision.geometry.dataclasses import Point
 from supervision.draw.color import ColorPalette
 
-from .modules.plate_recognition import PlateRecognizer
-from .modules.speed_estimation import SpeedEstimator
-from .utils.annotation import NoteAnnotator, TraceAnnotator
+from modules.plate_recognition import PlateRecognizer
+from modules.speed_estimation import SpeedEstimator
+from modules.annotation import NoteAnnotator, TraceAnnotator
 
 log = logging.getLogger(__name__)
 
