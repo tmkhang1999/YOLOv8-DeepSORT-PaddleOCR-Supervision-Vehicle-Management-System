@@ -1,6 +1,9 @@
 import argparse
-from modules.video_processor import VideoProcessor
+import os
+import sys
+
 from utils.config import ConfigManager
+from modules.video_processor import VideoProcessor
 
 
 def main(args):
@@ -35,6 +38,13 @@ if __name__ == "__main__":
                         help="Path to the source video file.")
     parser.add_argument("--target-video", default="./data/videos/output.mp4",
                         help="Path to the target video file for the output.")
+
+    # Get the current script's directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Add the parent directory to the Python path
+    parent_dir = os.path.join(current_dir, "..")
+    sys.path.append(parent_dir)
 
     # Parse command-line arguments
     args = parser.parse_args()
