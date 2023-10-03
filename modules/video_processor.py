@@ -94,7 +94,7 @@ class VideoProcessor:
         self.trace_annotator = TraceAnnotator()
 
         # Calculate the scale of our own frame compared to 720p (1280 x 720px)
-        self.scale = int(math.sqrt(width * height / 1280 / 720))
+        self.scale = math.sqrt(width * height / 1280 / 720)
 
     def process_video(self):
         """
