@@ -1,12 +1,11 @@
-# <p style="text-align: center">Vehicle Management System</p>
-
-Demo
+# Vehicle Management System
+https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Management-System/assets/74235084/4b8cd9f3-6de2-4060-848e-a12cfafd97b8
 
 ## Table of Contents
-1. [Motivation](##motivation)
-2. [Installation](##installation)
-3. [File Descriptions](##files)
-4. [Acknowledgements](##acknowledgements)
+1. [Motivation](#motivation)
+2. [Installation](#installation)
+3. [File Descriptions](#files)
+4. [Acknowledgements](#acknowledgements)
 
 ## Installation <a name="installation"></a>
 - Python >= 3.6
@@ -52,11 +51,9 @@ By achieving these objectives, we aspire to create a more efficient and intellig
 ```
 
 ## Acknowledgements<a name="acknowledgements"></a>
-https://github.com/roboflow/supervision
-
-https://github.com/ultralytics/ultralytics
-
-https://github.com/levan92/deep_sort_realtime
-
-https://github.com/PaddlePaddle/PaddleOCR
-
+We appreciate the following repositories for their valuable contributions to our project:
+[roboflow/supervision](https://github.com/roboflow/supervision) for streamlining our code and simplifying the annotation process.
+[ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) for providing YOLOv8 models and weights.
+[levan92/deep_sort_realtime](https://github.com/levan92/deep_sort_realtime) for offering an easy-to-use deepsort implementation.
+[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) for supplying an efficient OCR model.
+[NVIDIAAICITYCHALLENGE/2018AICITY_Maryland](https://github.com/NVIDIAAICITYCHALLENGE/2018AICITY_Maryland/tree/master) for making available the code for speed estimation on 2D frames.
