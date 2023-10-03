@@ -7,6 +7,16 @@ https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Man
 3. [File Descriptions](#files)
 4. [Acknowledgements](#acknowledgements)
 
+## Motivation<a name="motivation"></a>
+In recent years, there has been a rapid growth in the field of AI. This growth has led us to explore how we can leverage advanced technology for the enhancement of highway traffic camera systems. The primary motivation behind this project is to seamlessly integrate cutting-edge deep learning algorithms into our vehicle management system. In pursuit of this goal, our project aims to accomplish the following objectives:
+
+1. **Detect and classify vehicles** on the road, including cars, trucks, buses, and motorcycles.
+2. **Count vehicles" as they enter and exit the monitored area by implementing a robust **tracking system**.
+3. **Estimate the speed** on 2D frames in real-time.
+4. **Detect and recognize license plates**, enhancing the system's capabilities further.
+
+By achieving these objectives, we aspire to create a more efficient and intelligent traffic monitoring system that leverages the power of AI to enhance safety and traffic management on highways.
+
 ## Installation <a name="installation"></a>
 - Python >= 3.6
 - supervision ~= 0.1.0
@@ -18,15 +28,7 @@ https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Man
 - opencv-python ~= 4.8.1.78
 - pyaml_env ~= 1.2.1
 
-## Motivation<a name="motivation"></a>
-In recent years, there has been a rapid growth in the field of AI. This growth has led us to explore how we can leverage advanced technology for the enhancement of highway traffic camera systems. The primary motivation behind this project is to seamlessly integrate cutting-edge deep learning algorithms into our vehicle management system. In pursuit of this goal, our project aims to accomplish the following objectives:
 
-- **Detect and classify vehicles** on the road, including cars, trucks, buses, and motorcycles.
-- Implement a robust **tracking system** to accurately count vehicles as they enter and exit the monitored area.
-- Utilize 2D camera data to **estimate the speed** of vehicles in real-time.
-- **Detect and recognize license plates**, enhancing the system's capabilities further.
-
-By achieving these objectives, we aspire to create a more efficient and intelligent traffic monitoring system that leverages the power of AI to enhance safety and traffic management on highways.
 
 ## File Descriptions <a name="files"></a>
 ```angular2html
