@@ -11,7 +11,7 @@ https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Man
 In recent years, there has been a rapid growth in the field of AI. This growth has led us to explore how we can leverage advanced technology for the enhancement of highway traffic camera systems. The primary motivation behind this project is to seamlessly integrate cutting-edge deep learning algorithms into our vehicle management system. In pursuit of this goal, our project aims to accomplish the following objectives:
 
 1. **Detect and classify vehicles** on the road, including cars, trucks, buses, and motorcycles.
-2. **Count vehicles" as they enter and exit the monitored area by implementing a robust **tracking system**.
+2. **Count vehicles** as they enter and exit the monitored area by implementing a robust **tracking system**.
 3. **Estimate the speed** on 2D frames in real-time.
 4. **Detect and recognize license plates**, enhancing the system's capabilities further.
 
