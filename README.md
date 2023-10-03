@@ -52,8 +52,8 @@ By achieving these objectives, we aspire to create a more efficient and intellig
 
 ## Acknowledgements<a name="acknowledgements"></a>
 We appreciate the following repositories for their valuable contributions to our project:
-[roboflow/supervision](https://github.com/roboflow/supervision) for streamlining our code and simplifying the annotation process.
-[ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) for providing YOLOv8 models and weights.
-[levan92/deep_sort_realtime](https://github.com/levan92/deep_sort_realtime) for offering an easy-to-use deepsort implementation.
-[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) for supplying an efficient OCR model.
-[NVIDIAAICITYCHALLENGE/2018AICITY_Maryland](https://github.com/NVIDIAAICITYCHALLENGE/2018AICITY_Maryland/tree/master) for making available the code for speed estimation on 2D frames.
+- [roboflow/supervision](https://github.com/roboflow/supervision) for streamlining our code and simplifying the annotation process.
+- [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) for providing YOLOv8 models and weights.
+- [levan92/deep_sort_realtime](https://github.com/levan92/deep_sort_realtime) for offering an easy-to-use deepsort implementation.
+- [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) for supplying an efficient OCR model.
+- [NVIDIAAICITYCHALLENGE/2018AICITY_Maryland](https://github.com/NVIDIAAICITYCHALLENGE/2018AICITY_Maryland/tree/master) for making available the code for speed estimation on 2D frames.
