@@ -28,7 +28,20 @@ By achieving these objectives, we aspire to create a more efficient and intellig
 - opencv-python ~= 4.8.1.78
 - pyaml_env ~= 1.2.1
 
-
+To install this project and its dependencies, follow these steps:
+1. Clone this repository:
+```angular2html
+git clone https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Management-System.git
+```
+2. Install the project's dependencies with pip:
+```angular2html
+pip install requirements.txt
+```
+3. Run command:
+```angular2html
+python main.py --config-path ./utils/config.yml --source-video ./data/videos/vehicle-counting.mp4 --target-video ./output.mp4
+```
+Or you can click on Vehicle_Quick_Test notebook I provided above to see the results
 
 ## File Descriptions <a name="files"></a>
 ```angular2html
