@@ -4,7 +4,7 @@ https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Man
 ## Table of Contents
 1. [Motivation](#motivation)
 2. [Installation](#installation)
-3. [File Descriptions](#files)
+3. [File Description](#files)
 4. [Acknowledgements](#acknowledgements)
 
 ## Motivation<a name="motivation"></a>
@@ -41,9 +41,9 @@ pip install requirements.txt
 ```angular2html
 python main.py --config-path ./utils/config.yml --source-video ./data/videos/vehicle-counting.mp4 --target-video ./output.mp4
 ```
-Or you can click on Vehicle_Quick_Test notebook I provided above to see the results
+Or you can click on Vehicle_Quick_Test notebook I provided above to quickly run the test and see the results.
 
-## File Descriptions <a name="files"></a>
+## File Description <a name="files"></a>
 ```angular2html
 ├── README.md
 ├── main.py *** running ConfigManager and VideoProcessor
