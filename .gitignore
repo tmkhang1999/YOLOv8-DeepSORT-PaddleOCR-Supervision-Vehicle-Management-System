@@ -160,3 +160,7 @@ cython_debug/
 .idea/
 **/__pycache__/
 venv
+
+# Model files & video files
+*.mp4
+data/models/*
