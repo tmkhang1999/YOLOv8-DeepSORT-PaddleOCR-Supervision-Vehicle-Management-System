@@ -48,7 +48,9 @@ class VideoProcessor:
         # Initialize the vehicle detection/ plate detection/ paddleOCR models
         self.vehicle_detector = YOLO(self.config['models']['vehicle_detector_path'])
         self.plate_detector = YOLO(self.config['models']['plate_detector_path'])
-        self.ocr_model = PaddleOCR(lang='en', show_log=False, use_angle_cls=True, use_gpu=False)
+        # self.ocr_model = PaddleOCR(lang='en', show_log=False, use_angle_cls=True, use_gpu=False)
+        self.ocr_model = PaddleOCR(lang="en", rec_model_type='en', rec_algorithm='SVTR_LCNet', ocr_version='PP-OCRv4',
+            use_gpu=False, det_db_thresh=0.4, show_log=True, use_angle_cls=False, binarize=True)        
 
         # Initialize the tracker
         self.object_tracker = DeepSort(max_age=20,
