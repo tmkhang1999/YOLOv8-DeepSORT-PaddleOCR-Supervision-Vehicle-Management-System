@@ -1,5 +1,5 @@
-# Vehicle Management System
-https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Management-System/assets/74235084/4b8cd9f3-6de2-4060-848e-a12cfafd97b8
+# Traffic Monitoring System
+* Original repo comes from [Vehicle Management System](https://github.com/tmkhang1999/YOLOv8-DeepSORT-PaddleOCR-Supervision-Vehicle-Management-System/assets/74235084/4b8cd9f3-6de2-4060-848e-a12cfafd97b8)
 
 ## Table of Contents
 1. [Motivation](#motivation)
@@ -27,6 +27,10 @@ By achieving these objectives, we aspire to create a more efficient and intellig
 - numpy < 1.24
 - opencv-python ~= 4.8.1.78
 - pyaml_env ~= 1.2.1
+
+## Use CUDA GPU <a name="gpu"></a>
+[Install pytorch CUDA GPU support](https://pytorch.org/get-started/locally/) if you would want to use GPU inference speedup.
+
 
 To install this project and its dependencies, follow these steps:
 1. Clone this repository:

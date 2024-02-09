@@ -20,6 +20,8 @@ from modules.plate_recognition import PlateRecognizer
 from modules.speed_estimation import SpeedEstimator
 from modules.annotation import NoteAnnotator, TraceAnnotator
 
+import torch
+
 log = logging.getLogger(__name__)
 
 
@@ -45,12 +47,20 @@ class VideoProcessor:
         """
            Set up the video processing environment and initialize necessary components.
         """
+        
+        # setup GPU
+        device = "0" if torch.cuda.is_available() else "cpu"
+        if device == "0":
+            torch.cuda.set_device(0)
+            print('Use torch with GPU device 0')
+        
         # Initialize the vehicle detection/ plate detection/ paddleOCR models
         self.vehicle_detector = YOLO(self.config['models']['vehicle_detector_path'])
+        self.vehicle_detector.to('cuda')
         self.plate_detector = YOLO(self.config['models']['plate_detector_path'])
         # self.ocr_model = PaddleOCR(lang='en', show_log=False, use_angle_cls=True, use_gpu=False)
         self.ocr_model = PaddleOCR(lang="en", rec_model_type='en', rec_algorithm='SVTR_LCNet', ocr_version='PP-OCRv4',
-            use_gpu=False, det_db_thresh=0.4, show_log=True, use_angle_cls=False, binarize=True)        
+            use_gpu=True, det_db_thresh=0.4, show_log=True, use_angle_cls=False, binarize=True)        
 
         # Initialize the tracker
         self.object_tracker = DeepSort(max_age=20,
@@ -177,7 +187,8 @@ class VideoProcessor:
                                     speed_label = f" | Speed: {tracker_state[0]:0.2f} mph"
 
                                 # Recognize plate
-                                plate, ocr_conf = self.plate_recognizer.detect(frame, xyxy)
+                                # plate, ocr_conf = self.plate_recognizer.detect(frame, xyxy)
+                                plate, ocr_conf = None, None
                                 if plate is not None and ocr_conf > tracker_state[-1]:
                                     tracker_state[-2], tracker_state[-1] = plate, ocr_conf
 
